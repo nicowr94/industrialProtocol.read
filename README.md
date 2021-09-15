@@ -1,3 +1,4 @@
+
 # industrialProtocol.read-
 El desafío es implementar una función que maneje de manera eficiente las llamadas de una operación de lectura para un protocolo industrial. 
 
@@ -19,6 +20,9 @@ El desafío es implementar una función que maneje de manera eficiente las llama
   - Ir a http://localhost:3000/
   - Utilizar la api: 
     GET: http://localhost:3000/industrialProtocol
+    
+    ![Screenshot_2](https://user-images.githubusercontent.com/35709873/133397644-85500882-afd4-4d84-bd84-b34c458d7eb7.png)
+
     
     ```javascipt
     Body:
@@ -47,5 +51,12 @@ El desafío es implementar una función que maneje de manera eficiente las llama
         ]
       }
     ```
+    Se tendrá un resultado con status 200 OK y time 49ms con un array ordenado por payloads
+    
+    ![Screenshot_3](https://user-images.githubusercontent.com/35709873/133397808-29ea10e7-166e-499c-af9a-db6fc8c409b3.png)
+    
+    ![Screenshot_4](https://user-images.githubusercontent.com/35709873/133398274-e73d10c5-efa2-46f4-a77b-78a924420758.png)
+
+
     Hay otros ejemplos de Request en el archivo industrialProtocol.postman_collection.json
   
