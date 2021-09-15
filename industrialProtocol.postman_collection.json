@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "b8442f01-de6b-4912-bac8-bc2c8faa3032",
+		"name": "industrialProtocol",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Request 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputList\": [\r\n        {\r\n            \"start\": 1,\r\n            \"length\": 2,\r\n            \"callback\":\"cb1\"\r\n        },\r\n        {\r\n            \"start\": 2,\r\n            \"length\": 3,\r\n            \"callback\":\"cb2\"\r\n        },\r\n        {\r\n            \"start\": 1,\r\n            \"length\": 8,\r\n            \"callback\":\"cb2\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/industrialProtocol"
+			},
+			"response": [
+				{
+					"name": "Resultado 2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"inputList\": [\r\n        {\r\n            \"start\": 1,\r\n            \"length\": 2,\r\n            \"callback\":\"cb1\"\r\n        },\r\n        {\r\n            \"start\": 2,\r\n            \"length\": 3,\r\n            \"callback\":\"cb2\"\r\n        },\r\n        {\r\n            \"start\": 1,\r\n            \"length\": 8,\r\n            \"callback\":\"cb2\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/industrialProtocol"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"27-jMqlytcSCrrsZt8htCCP6zSbvfA\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Sep 2021 07:56:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    [\n        -1,\n        1\n    ],\n    [\n        1,\n        -1,\n        1\n    ],\n    [\n        -1,\n        1,\n        -1,\n        1,\n        -1,\n        1,\n        -1,\n        1\n    ]\n]"
+				}
+			]
+		},
+		{
+			"name": "Request 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputList\": [\r\n        {\r\n            \"start\": 2,\r\n            \"length\": 9,\r\n            \"callback\":\"cb1\"\r\n        },\r\n        {\r\n            \"start\": 4,\r\n            \"length\": 2,\r\n            \"callback\":\"cb2\"\r\n        },\r\n        {\r\n            \"start\": 1,\r\n            \"length\": 4,\r\n            \"callback\":\"cb2\"\r\n        },\r\n        {\r\n            \"start\": 5,\r\n            \"length\": 1,\r\n            \"callback\":\"cb2\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/industrialProtocol"
+			},
+			"response": [
+				{
+					"name": "Resultado 1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"inputList\": [\r\n        {\r\n            \"start\": 2,\r\n            \"length\": 9,\r\n            \"callback\":\"cb1\"\r\n        },\r\n        {\r\n            \"start\": 4,\r\n            \"length\": 2,\r\n            \"callback\":\"cb2\"\r\n        },\r\n        {\r\n            \"start\": 1,\r\n            \"length\": 4,\r\n            \"callback\":\"cb2\"\r\n        },\r\n        {\r\n            \"start\": 5,\r\n            \"length\": 1,\r\n            \"callback\":\"cb2\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/industrialProtocol"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "49"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"31-1bhFrnYd6zGC3kyggyz5TtzveIg\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Sep 2021 08:07:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    [\n        1,\n        -1,\n        1,\n        -1,\n        1,\n        -1,\n        1,\n        -1,\n        1\n    ],\n    [\n        1,\n        -1\n    ],\n    [\n        -1,\n        1,\n        -1,\n        1\n    ],\n    [\n        -1\n    ]\n]"
+				}
+			]
+		}
+	]
+}
